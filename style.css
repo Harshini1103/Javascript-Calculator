@@ -1,0 +1,26 @@
+body{
+    
+    background-color:Blue;
+}
+.container{
+    width: 400px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:yellow;
+    margin-top: 150px;
+    margin-left: 450px;
+}
+.items{
+    text-align: center;
+
+    padding: 20px;
+
+}
+button:hover{
+    background-color: orange;
+    transform: scale(1,1.5);
+}

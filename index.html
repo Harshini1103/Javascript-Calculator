@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="items">
+    <h1>Simple Calculator</h1>
+    <label for="num1">ENTER NUMBER 1 :</label>
+    <input id="num1"><br><br>
+    <label for="num2">ENTER NUMBER 2 :</label>
+    <input id="num2"><br><br>
+    <button onclick="addition()">Add</button>
+    <button onclick="subtraction()">Subtract</button>
+    <button onclick="Multiplication()">Multiply</button>
+    <button onclick="Division()">Division</button><br><br>
+    <label for="res">RESULT:</label>
+    <input id="res">
+</div>
+    </div>
+    <script>
+       var number1=document.getElementById("num1")
+       var number2=document.getElementById("num2")
+       var para=document.getElementById("res")
+       function addition(){
+        var no1=Number(number1.value)
+        var no2=Number(number2.value)
+        var total=no1+no2
+        para.value=total
+
+       }
+       function subtraction(){
+        var no1=Number(number1.value)
+        var no2=Number(number2.value)
+        var total1=no2-no1
+        para.value=total1
+
+       } 
+       function Multiplication(){
+        var no1=Number(number1.value)
+        var no2=Number(number2.value)
+        var total1=no1*no2
+        para.value=total1
+
+       }
+       function Division(){
+        var no1=Number(number1.value)
+        var no2=Number(number2.value)
+        var total1=no1/no2
+        para.value=total1
+
+       }
+    </script>
+
+    
+</body>
+</html>
